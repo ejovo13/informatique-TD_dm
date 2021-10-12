@@ -1,0 +1,5 @@
+build/
+bin/
+Latex/*
+!Latex/*.tex
+!Latex/*.pdf

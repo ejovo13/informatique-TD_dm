@@ -1,0 +1,240 @@
+\documentclass[a4paper]{article}
+
+% \usepackage{T1}[fontenc]
+% \usepackage{lmodern}
+% \usepackage{fonstspec}
+% \setmainfont{FreeSerif}
+
+\renewcommand{\familydefault}{\rmdefault}
+
+% \oddsidemargin = 2in
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[french, english]{babel}
+\graphicspath{ {./img/} }
+\selectlanguage{french}
+\usepackage{algorithmicx}
+% \usepackage{pseudocode}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+%%%%%%%% FONT ATTEMPTS %%%%%%%%%%%%%%
+
+% PLAY FAIR DISPLAY %%%%%%%%%%%%%%%%%%%%%
+% \usepackage{PlayfairDisplay} % Use option 'black' to use the black
+% %% variant for boldface
+% %% Use option 'osf' to use oldstyle figures as default
+% \renewcommand*\oldstylenums[1]{{\playfairOsF #1}}
+% \usepackage[T1]{fontenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% %  tgschola %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage{tgschola}
+% \usepackage[T1]{fontenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% NEW COMPUTER MODERN ROMAN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+% \setmathfont{NewCMMath-Regular.otf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% DIDEROT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% \usepackage{TheanoDidot}
+% \usepackage[T1]{fontenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% GSDIDEROT
+% \usepackage{gfsdidot}
+
+% \fontfamily{lmr}\selectfont
+
+% \usepackage{exercice}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{dsfont}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{tabto}
+% \usepackage{titlesec}
+\usepackage{fancyhdr}
+
+\geometry{rmargin=1.5in}
+
+
+% \titleformat*{\section}{\small\bfseries}
+% \titleformat*{\subsection}{\Large\bfseries}
+% \titleformat*{\subsubsection}{\large\bfseries}
+% \titleformat*{\paragraph}{\large\bfseries}
+% \titleformat*{\subparagraph}{\large\bfseries}
+
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+                                  {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                  {2.3ex \@plus.2ex}%
+                                  {\normalfont\normalsize\bfseries}}
+\makeatletter
+
+
+% \makeatletter
+% \@date
+% \@title
+% \makeatother
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+
+
+\title{\Large \raggedright \bf Travaux Dirig\'es n\degree2}
+% \author{\raggedright VOYLES Evan}
+\date{}
+
+% \newtheorem{exercice}{exercice}[section]
+\newtheorem{exercice}{Exercice}
+\newtheorem*{exercice*}{Exercice bonus}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{lemme}{Lemme}
+% \renewcommand{\section*{}}
+
+\fancyhf{}
+\rhead{VOYLES Evan}
+\lhead{MAIN}
+
+\begin{document}
+\pagestyle{fancy}
+
+% \begin{titlepage}
+    %     \maketitle
+    %     \today
+    % \end{titlepage}
+
+    \makeatletter
+    \maketitle
+    \vspace{-.65in}
+    \noindent
+    MAIN3\\
+    VOYLES Evan\\
+    \today
+    \makeatother
+
+    \newenvironment{norm}{
+
+        \normalfont
+
+
+        }
+
+        \newcommand{\Entree}{\textbf{Donn\'ees d'entr\'ee :  }}
+        \newcommand{\Sortie}{\\\textbf{Donn\'ees de sortie :  }}
+
+\begin{algorithm}[h!]
+    \caption{Renvoi l'indice du plus petit \'element d'un tableau d'entiers}\label{alg:cap}
+    \Entree T (tableau d'entiers), N (nombre entier, taille de T)
+    \Sortie indice\_min (nombre entier)
+    \begin{algorithmic}[1]
+    \State $indice\_min \gets$ -1
+    \State $min \gets T_1$
+    \For{$i \gets 1, N$}
+    \If{$T_i < min$}
+    \State $min \gets T_i$
+    \State $indice\_min \gets i$
+    \EndIf
+    \EndFor
+    \State \Return $indice\_min$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[h!]
+    \caption{Nombre d'occurences}\label{alg:cap}
+    \Entree T (tableau d'entiers), n (nombre entier), P (nombre entier, taille de T)
+    \Sortie nombre\_fois (nombre entier)
+    \begin{algorithmic}[1]
+    \State $nombre\_fois \gets 0$
+    \For{$i \gets 1, P$}
+    \If{$T_i = n $}
+    \State $nombre\_fois \gets nombre\_fois + 1$
+    \EndIf
+    \EndFor
+    \State \Return $nombre\_fois$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[h!]
+    \caption{Moyenne et ecart-type}\label{alg:cap}
+    \Entree T (tableau de doubles), N (nombre entier, taille de T)
+    \Sortie moyenne (double), ecart\_type (double)
+    \begin{algorithmic}[1]
+    \State $moyenne \gets 0$
+    \State $ ecart\_type \gets 0$
+    \State $sum \gets 0$
+    \State $ecart\_carre \gets 0$
+    \For{$i \gets 1, N$}
+    \State $sum \gets sum + T_i$
+    \EndFor
+    \State $moyenne \gets sum/N$
+    \For{$i \gets 1, N$}
+    \State $ecart\_carre \gets (T_i - moyenne)^2$
+    \EndFor
+    \State $ecart\_type \gets \sqrt{ecart\_carre/(N-1)}$
+    \State \Return $moyenne, ecart\_type$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[t!]
+    \caption{Palindrome}\label{alg:cap}
+    \Entree T (tableau d'entiers), N (nombre entier, taille de T)
+    \Sortie est\_palindrome (boolean)
+    \begin{algorithmic}[1]
+    \For{$i \gets 1, \floor*{N/2}$}
+    \If{$T_i \neq T_{N-i+1}$}
+    \State \Return $false$
+    \EndIf
+    \EndFor
+    \State \Return $true$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[t!]
+    \caption{Remplacement des doublons}\label{alg:cap}
+    \Entree T (tableau d'entiers $> 0$), N (nombre entier, taille de T)
+    \Sortie T avec les doublons remplace par 0
+    \begin{algorithmic}[1]
+    \State $old\_value \gets T_1$
+    \For{$i \gets 2,N$}
+    \If{$T_i = old\_value$}
+    \State $T_i \gets 0$
+    \Else
+    \State $old\_value \gets T_i$
+    \EndIf
+    \EndFor
+    \State \Return $T$
+    \end{algorithmic}
+\end{algorithm}
+
+\setcounter{algorithm}{6}
+\begin{algorithm}[t]
+    \caption{Crible d'\'Erastosth\`ene}\label{alg:cap}
+    \Entree T (tableau d'entiers $> 0$), N (nombre entier)
+    \Sortie T avec les \'el\'ements non-primes remplac\'es par $-1$
+    \begin{algorithmic}[1]
+    \State $T \gets 2:N$
+    \For{$i \gets 2,\floor*{\sqrt{N}}$}
+    \For{$j \gets 1, N$}
+    \If{$T_j \bmod i \equiv 0$}
+    \State $T_j \gets -1$
+    \EndIf
+    \EndFor
+    \EndFor
+    \State \Return $T$
+    \end{algorithmic}
+\end{algorithm}
+
+
+\end{document}

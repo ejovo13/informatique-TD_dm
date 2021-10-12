@@ -3,7 +3,7 @@ name: Macos
 on:
   push:
     branches:
-      - main
+      - master
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)

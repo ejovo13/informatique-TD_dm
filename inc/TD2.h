@@ -17,6 +17,12 @@ typedef struct stat {
     double ecart_type;
 } Stat;
 
+/**
+ * Calculer la moyenne et ecart type d'un tableau des entiers
+ *
+ * @param __T Tableau des entiers
+ * @param __N Taille du tableau
+ */
 Stat analyse_stat(const int * __T, size_t __N);
 
 bool est_palindrome(const int * __T, size_t __N);

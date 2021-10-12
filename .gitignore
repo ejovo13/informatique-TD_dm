@@ -3,3 +3,4 @@ bin/
 Latex/*
 !Latex/*.tex
 !Latex/*.pdf
+.vscode/

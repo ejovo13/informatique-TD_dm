@@ -9,16 +9,16 @@ Devoirs Maison
 - [x] Tout
 
 ### TD3
-- [] Exo 1
-- [] Exo 6
+- [ ] Exo 1
+- [ ] Exo 6
 
 ### TD4
-- [] Exo 3
-- [] Exo 4
+- [ ] Exo 3
+- [ ] Exo 4
 
 ### TD5
-- [] Exo 1
+- [ ] Exo 1
 
 ### TD6
-- [] Exo 1
-- [] Exo 4
+- [ ] Exo 1
+- [ ] Exo 4

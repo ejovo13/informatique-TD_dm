@@ -4,5 +4,5 @@ Latex/*
 !Latex/*.tex
 !Latex/*.pdf
 .vscode/
-latex
-html
+# latex
+# html

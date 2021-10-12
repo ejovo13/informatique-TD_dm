@@ -186,7 +186,7 @@
     \State \Return $moyenne, ecart\_type$
     \end{algorithmic}
 \end{algorithm}
-
+\newpage
 \begin{algorithm}[t!]
     \caption{Palindrome}\label{alg:cap}
     \Entree T (tableau d'entiers), N (nombre entier, taille de T)
@@ -219,7 +219,32 @@
 \end{algorithm}
 
 \setcounter{algorithm}{6}
-\begin{algorithm}[t]
+\begin{algorithm}[h!]
+    \caption{Crible d'\'Erastosth\`ene}\label{alg:cap}
+    \Entree T (tableau d'entiers $> 0$), N (nombre entier)
+    \Sortie T avec les \'el\'ements non-primes remplac\'es par $-1$
+    \begin{algorithmic}[1]
+    \State $T \gets 2:N$
+    \For{$i \gets 2,\floor*{\sqrt{N}}$}
+    \For{$j \gets 1, N$}
+    \If{$T_j \bmod i \equiv 0$}
+    \State $T_j \gets -1$
+    \EndIf
+    \EndFor
+    \EndFor
+    \State \Return $T$
+    \end{algorithmic}
+\end{algorithm}
+\newpage
+
+\newenvironment{blank}{}
+
+\begin{blank}
+    \Large \raggedright \bf Travaux Dirig\'es n\degree3
+\end{blank}
+\setcounter{algorithm}{0}
+
+\begin{algorithm}[h!]
     \caption{Crible d'\'Erastosth\`ene}\label{alg:cap}
     \Entree T (tableau d'entiers $> 0$), N (nombre entier)
     \Sortie T avec les \'el\'ements non-primes remplac\'es par $-1$

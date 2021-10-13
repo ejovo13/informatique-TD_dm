@@ -1,0 +1,377 @@
+\documentclass[a4paper]{article}
+
+% \usepackage{T1}[fontenc]
+% \usepackage{lmodern}
+% \usepackage{fonstspec}
+% \setmainfont{FreeSerif}
+
+\renewcommand{\familydefault}{\rmdefault}
+% \oddsidemargin = 2in
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[french, english]{babel}
+\graphicspath{ {./img/} }
+\selectlanguage{french}
+\usepackage{algorithmicx}
+% \usepackage{pseudocode}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+%%%%%%%% FONT ATTEMPTS %%%%%%%%%%%%%%
+
+% PLAY FAIR DISPLAY %%%%%%%%%%%%%%%%%%%%%
+% \usepackage{PlayfairDisplay} % Use option 'black' to use the black
+% %% variant for boldface
+% %% Use option 'osf' to use oldstyle figures as default
+% \renewcommand*\oldstylenums[1]{{\playfairOsF #1}}
+% \usepackage[T1]{fontenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% %  tgschola %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage{tgschola}
+% \usepackage[T1]{fontenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% NEW COMPUTER MODERN ROMAN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+% \setmathfont{NewCMMath-Regular.otf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% DIDEROT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% \usepackage{TheanoDidot}
+% \usepackage[T1]{fontenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% GSDIDEROT
+% \usepackage{gfsdidot}
+
+% \fontfamily{lmr}\selectfont
+
+% \usepackage{exercice}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{dsfont}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{tabto}
+% \usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\geometry{rmargin=1.5in}
+
+
+% \titleformat*{\section}{\small\bfseries}
+% \titleformat*{\subsection}{\Large\bfseries}
+% \titleformat*{\subsubsection}{\large\bfseries}
+% \titleformat*{\paragraph}{\large\bfseries}
+% \titleformat*{\subparagraph}{\large\bfseries}
+
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+                                  {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                  {2.3ex \@plus.2ex}%
+                                  {\normalfont\normalsize\bfseries}}
+\makeatletter
+
+
+% \makeatletter
+% \@date
+% \@title
+% \makeatother
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+
+
+\title{\Large \raggedright \bf Travaux Dirig\'es n\degree2}
+% \author{\raggedright VOYLES Evan}
+\date{}
+
+% \newtheorem{exercice}{exercice}[section]
+\newtheorem{exercice}{Exercice}
+\newtheorem*{exercice*}{Exercice bonus}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{lemme}{Lemme}
+% \renewcommand{\section*{}}
+
+\fancyhf{}
+\rhead{VOYLES Evan}
+\lhead{MAIN}
+
+\begin{document}
+\pagestyle{fancy}
+
+% \begin{titlepage}
+    %     \maketitle
+    %     \today
+    % \end{titlepage}
+
+    \makeatletter
+    \maketitle
+    \vspace{-.65in}
+    \noindent
+    MAIN3\\
+    VOYLES Evan\\
+    \today
+    \makeatother
+
+    \newenvironment{norm}{
+
+        \normalfont
+
+
+        }
+
+        \newcommand{\Entree}{\textbf{Donn\'ees d'entr\'ee :  }}
+        \newcommand{\Sortie}{\\\textbf{Donn\'ees de sortie :  }}
+
+\begin{algorithm}[h!]
+    \caption{Renvoi l'indice du plus petit \'element d'un tableau d'entiers}\label{alg:cap}
+    \Entree T (tableau d'entiers), N (nombre entier, taille de T)
+    \Sortie indice\_min (nombre entier)
+    \begin{algorithmic}[1]
+    \State $indice\_min \gets$ -1
+    \State $min \gets T_1$
+    \For{$i \gets 1, N$}
+    \If{$T_i < min$}
+    \State $min \gets T_i$
+    \State $indice\_min \gets i$
+    \EndIf
+    \EndFor
+    \State \Return $indice\_min$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[h!]
+    \caption{Nombre d'occurences}\label{alg:cap}
+    \Entree T (tableau d'entiers), n (nombre entier), P (nombre entier, taille de T)
+    \Sortie nombre\_fois (nombre entier)
+    \begin{algorithmic}[1]
+    \State $nombre\_fois \gets 0$
+    \For{$i \gets 1, P$}
+    \If{$T_i = n $}
+    \State $nombre\_fois \gets nombre\_fois + 1$
+    \EndIf
+    \EndFor
+    \State \Return $nombre\_fois$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[h!]
+    \caption{Moyenne et ecart-type}\label{alg:cap}
+    \Entree T (tableau de doubles), N (nombre entier, taille de T)
+    \Sortie moyenne (double), ecart\_type (double)
+    \begin{algorithmic}[1]
+    \State $moyenne \gets 0$
+    \State $ ecart\_type \gets 0$
+    \State $sum \gets 0$
+    \State $ecart\_carre \gets 0$
+    \For{$i \gets 1, N$}
+    \State $sum \gets sum + T_i$
+    \EndFor
+    \State $moyenne \gets sum/N$
+    \For{$i \gets 1, N$}
+    \State $ecart\_carre \gets (T_i - moyenne)^2$
+    \EndFor
+    \State $ecart\_type \gets \sqrt{ecart\_carre/(N-1)}$
+    \State \Return $moyenne, ecart\_type$
+    \end{algorithmic}
+\end{algorithm}
+\newpage
+\begin{algorithm}[t!]
+    \caption{Palindrome}\label{alg:cap}
+    \Entree T (tableau d'entiers), N (nombre entier, taille de T)
+    \Sortie est\_palindrome (boolean)
+    \begin{algorithmic}[1]
+    \For{$i \gets 1, \floor*{N/2}$}
+    \If{$T_i \neq T_{N-i+1}$}
+    \State \Return $false$
+    \EndIf
+    \EndFor
+    \State \Return $true$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[t!]
+    \caption{Remplacement des doublons}\label{alg:cap}
+    \Entree T (tableau d'entiers $> 0$), N (nombre entier, taille de T)
+    \Sortie T avec les doublons remplace par 0
+    \begin{algorithmic}[1]
+    \State $old\_value \gets T_1$
+    \For{$i \gets 2,N$}
+    \If{$T_i = old\_value$}
+    \State $T_i \gets 0$
+    \Else
+    \State $old\_value \gets T_i$
+    \EndIf
+    \EndFor
+    \State \Return $T$
+    \end{algorithmic}
+\end{algorithm}
+
+\setcounter{algorithm}{6}
+\begin{algorithm}[h!]
+    \caption{Crible d'\'Erastosth\`ene}\label{alg:cap}
+    \Entree T (tableau d'entiers $> 0$), N (nombre entier)
+    \Sortie T avec les \'el\'ements non-primes remplac\'es par $-1$
+    \begin{algorithmic}[1]
+    \State $T \gets 2:N$
+    \For{$i \gets 2,\floor*{\sqrt{N}}$}
+    \For{$j \gets 1, N$}
+    \If{$T_j \bmod i \equiv 0$}
+    \State $T_j \gets -1$
+    \EndIf
+    \EndFor
+    \EndFor
+    \State \Return $T$
+    \end{algorithmic}
+\end{algorithm}
+\newpage
+
+\newenvironment{blank}{}
+
+\begin{blank}
+    \Large \raggedright \bf Travaux Dirig\'es n\degree3
+\end{blank}
+\setcounter{algorithm}{0}
+
+\begin{algorithm}[h!]
+    \caption{Crible d'\'Erastosth\`ene}\label{alg:cap}
+    \Entree T (tableau d'entiers $> 0$), N (nombre entier)
+    \Sortie T avec les \'el\'ements non-primes remplac\'es par $-1$
+    \begin{algorithmic}[1]
+    \State $T \gets 2:N$
+    \For{$i \gets 2,\floor*{\sqrt{N}}$}
+    \For{$j \gets 1, N$}
+    \If{$T_j \bmod i \equiv 0$}
+    \State $T_j \gets -1$
+    \EndIf
+    \EndFor
+    \EndFor
+    \State \Return $T$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{blank}
+    \Large \raggedright \bf Travaux Dirig\'es n\degree4
+\end{blank}
+\setcounter{algorithm}{0}
+
+\setcounter{exercice}{2}
+\begin{exercice}
+    On consid\`ere le programe suivant:
+\end{exercice}
+
+\begin{lstlisting}[language=C]
+#include <stdio.h>
+int a = 27;
+int chose(int a);
+int machin();
+
+int chose(int a)
+{
+    return a+17+machin(); // a est une variable locale
+}
+int machin()
+{
+    return a; // a est une variable globale
+}
+int main()
+{
+    int a=1; // nouvelle declaration de a cache le 'a' de ligne 2
+    a=chose(a); // a <- (1 + 17 + 27)
+    printf("%d\n", a);
+}
+\end{lstlisting}
+Affiche 45 a l'\'ecran.
+
+\begin{exercice}
+    D\'efinissez l'affichage produit par l'ex\'ecution du programme. Expliquez.
+\end{exercice}
+\begin{lstlisting}[language=C]
+#include <stdio.h>
+
+int nb = 3;
+//============================================================
+
+void mal_ecrit_1 (int nb) // nb est une variable locale
+{
+    printf ("nb mal_ecrit_1 = %d\n",nb++); // nb++ renvoie nb et s'incremente APRES
+    {
+        int nb = 14; // cette exo est deguelasse
+        printf ("nb mal_ecrit_1 = %d\n",nb); // nb = 14
+    }
+    printf ("nb mal_ecrit_1 = %d\n",nb); // nb locale
+}
+//============================================================
+
+int mal_ecrit_2 (int x, int y) // nb dans cette scope est globale
+{
+    printf ("nb mal_ecrit_2 = %d\n",x + nb);
+    printf ("nb mal_ecrit_2 = %d\n",y + nb);
+    return (nb *= 0); // nb <- 0
+}
+//============================================================
+
+int main(void)
+{
+    int x = 3;
+    int y = 6;
+    printf ("nb main = %d\n",nb); // nb globale est initialise a 3
+    mal_ecrit_1(nb); // ne modifie pas du tout le nb globale
+    printf ("nb main = %d\n",nb);
+    printf("resultat de mal_ecrit_2 = %d\n",mal_ecrit_2(y,x)); // utilise nb = 3, renvoie nb <- 0
+    // Attention, on a appele la fonction mal_ecrit_2 avec l'ordre de y et x inverse
+    printf ("nb = %d\n",nb);
+    return 0;
+}
+\end{lstlisting}
+
+\noindent \textbf{29:} \verb|nb main = 3|\\
+\textbf{30:} \verb|nb mal_ecrit_1 = 3|\\
+\verb|    nb mal_ecrit_1 = 14| \\
+\verb|    nb mal_ecrit_1 = 4| \\
+\textbf{31:} \verb|nb main = 3| \\
+\textbf{32:} \verb|nb mal_ecrit_2 = 9| \\
+\verb|    nb mal_ecrit_2 = 6|\\
+\verb|    resultat de mal_ecrit_2 = 0|\\
+\textbf{34:} \verb|nb = 0|
+
+
+\end{document}

@@ -22,3 +22,6 @@ Devoirs Maison
 ### TD6
 - [ ] Exo 1
 - [ ] Exo 4
+
+### Comments
+- [ ] Add documentation to all code

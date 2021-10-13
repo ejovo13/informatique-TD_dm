@@ -13,8 +13,9 @@ Devoirs Maison
 - [ ] Exo 6
 
 ### TD4
-- [ ] Exo 3
-- [ ] Exo 4
+- [x] Exo 3
+- [x] Exo 4
+- [ ] Add explanation to print statements
 
 ### TD5
 - [ ] Exo 1

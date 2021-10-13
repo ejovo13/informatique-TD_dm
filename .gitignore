@@ -1,8 +1,7 @@
 build/
 bin/
-Latex/*
-!Latex/*.tex
-!Latex/*.pdf
+!latex/*.tex
+!latex/*.pdf
 .vscode/
-# latex
+latex
 # html

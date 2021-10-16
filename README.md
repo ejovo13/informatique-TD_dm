@@ -21,7 +21,7 @@ Devoirs Maison
 - [ ] Exo 1
 
 ### TD6
-- [ ] Exo 1
+- [x] Exo 1
 - [ ] Exo 4
 
 ### Comments

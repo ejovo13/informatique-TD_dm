@@ -373,5 +373,38 @@ int main(void)
 \verb|    resultat de mal_ecrit_2 = 0|\\
 \textbf{34:} \verb|nb = 0|
 
+\begin{blank}
+    \Large \raggedright \bf Travaux Dirig\'es n\degree5
+\end{blank}
+
+\begin{blank}
+    \Large \raggedright \bf Travaux Dirig\'es n\degree6
+\end{blank}
+
+\setcounter{exercice}{0}
+
+\begin{exercice}
+    Calculer $\pi$ en appliquant la suite de Leibniz : $\pi/4 = 1 - 1/3 + 1/5 - 1/7 + 1/9 - \dots$.
+\end{exercice}
+
+Une boucle \verb|while| me semble la plus appropri\'ee parce que on ne sait pas exactement le nombre de fois que l'on
+devrait it\'erer l'alorithme.
+
+\begin{algorithm}[h!]
+    \caption{Crible d'\'Erastosth\`ene}\label{alg:cap}
+    \Entree T (tableau d'entiers $> 0$), N (nombre entier)
+    \Sortie T avec les \'el\'ements non-primes remplac\'es par $-1$
+    \begin{algorithmic}[1]
+    \State $T \gets 2:N$
+    \For{$i \gets 2,\floor*{\sqrt{N}}$}
+    \For{$j \gets 1, N$}
+    \If{$T_j \bmod i \equiv 0$}
+    \State $T_j \gets -1$
+    \EndIf
+    \EndFor
+    \EndFor
+    \State \Return $T$
+    \end{algorithmic}
+\end{algorithm}
 
 \end{document}

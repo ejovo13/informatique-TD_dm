@@ -24,6 +24,7 @@ list(APPEND LIB_FILES
 
     TD2.c
     TD5.c
+    TD6.c
 
 
 )

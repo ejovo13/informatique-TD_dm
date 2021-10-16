@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "TD2.h"
+#include "TD6.h"
 
 int main() {
 
@@ -28,6 +29,15 @@ int main() {
     for (int i = 0; i < 999; i++) {
         if(primes[i] != -1) printf("%5d", primes[i]);
     }
+
+    printf("Trying to calculate the value of pi: %lf\n", 4*leibniz_pi(0.0001));
+
+    char str[] = "Hello this is a string k k ";
+
+    decompose_string(str);
+
+
+
 
 
     return 0;

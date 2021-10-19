@@ -10,7 +10,7 @@ list(APPEND SRC_FILES
     # ex8
     # ex9
     demo
-    TD4_ex4
+    # TD4_ex4
     # ex10
     # ex11
     # ex12

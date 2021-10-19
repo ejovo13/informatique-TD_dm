@@ -34,7 +34,19 @@ int main() {
 
     char str[] = "Hello this is a string k k ";
 
-    decompose_string(str);
+    char ** word_table = decompose_string(str);
+
+    // We have a string with 7 words, let's print all seven words
+
+    int num_words = count_words(str);
+    printf("Input string: '%s'\n", str);
+
+    for (int i = 0; i < num_words; i ++) {
+
+        printf("Word %d: '%s'\n", i+1, word_table[i]);
+
+    }
+
 
 
 

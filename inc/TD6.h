@@ -9,6 +9,8 @@
 
 #define MAX_ITERATIONS 1000000
 
+size_t count_words(const char *__string);
+
 double leibniz_pi(double __precision);
 
 char ** decompose_string(const char * __string);

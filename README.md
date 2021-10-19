@@ -7,6 +7,7 @@ Devoirs Maison
 
 ### TD2
 - [x] Tout
+- [x] Matrix multiplication!!!
 
 ### TD3
 - [x] Exo 1
@@ -18,11 +19,19 @@ Devoirs Maison
 - [ ] Add explanation to print statements
 
 ### TD5
-- [ ] Exo 1
+- [x] Exo 1
 
 ### TD6
 - [x] Exo 1
-- [ ] Exo 4
+- [x] Exo 4
 
 ### Comments
 - [ ] Add documentation to all code
+
+### Tests
+Add a test suite for:
+- [ ] TD2
+- [ ] TD3
+- [ ] TD4
+- [ ] TD5
+- [ ] TD6

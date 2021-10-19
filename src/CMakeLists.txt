@@ -39,6 +39,7 @@ add_subdirectory(TD3)
 add_subdirectory(TD4)
 add_subdirectory(TD5)
 add_subdirectory(TD6)
+add_subdirectory(EXAMEN)
 
 add_library(all_td ${ALL_TD_LIB})
 # add_subdirectory(ex9)

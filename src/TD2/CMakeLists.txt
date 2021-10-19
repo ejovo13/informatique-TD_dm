@@ -1,6 +1,6 @@
 set(TD2_SRC
 
-
+    6
 
 )
 
@@ -19,7 +19,7 @@ set(TD2_LIB
 message(STATUS "ADDING LIBRARY TD2")
 add_library(TD2 OBJECT ${TD2_LIB})
 
-# foreach(s ${TD2_SRC})
-#     add_executable(${s} "${s}.c")
-#     target_link_libraries(${s} TD2)
-# endforeach(s)
+foreach(s ${TD2_SRC})
+    add_executable("ex2_${s}" "ex${s}.c")
+    target_link_libraries("ex2_${s}" TD2 ejovo)
+endforeach(s)

@@ -21,4 +21,3 @@ float get_in_tab(const float * __tab, size_t __irow, size_t __icol, size_t __nb_
 void set_in_tab(float * __tab, size_t __irow, size_t __icol, size_t __nb_lignes, size_t __nb_cols, float __value) {
     __tab[__irow * __nb_lignes + __icol * __nb_cols] = __value;
 }
-

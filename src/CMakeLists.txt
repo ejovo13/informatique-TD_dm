@@ -10,7 +10,7 @@ list(APPEND SRC_FILES
     # ex8
     # ex9
     demo
-    TD4_ex4
+    # TD4_ex4
     # ex10
     # ex11
     # ex12
@@ -26,8 +26,8 @@ set(ALL_TD_LIB
     $<TARGET_OBJECTS:TD2>
     # TD3
     # TD4
-    # TD5
-    # TD6
+    $<TARGET_OBJECTS:TD5>
+    $<TARGET_OBJECTS:TD6>
 
 )
 

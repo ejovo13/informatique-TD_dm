@@ -26,8 +26,8 @@ set(ALL_TD_LIB
     $<TARGET_OBJECTS:TD2>
     # TD3
     # TD4
-    # TD5
-    # TD6
+    $<TARGET_OBJECTS:TD5>
+    $<TARGET_OBJECTS:TD6>
 
 )
 

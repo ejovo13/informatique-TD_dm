@@ -20,16 +20,27 @@ list(APPEND SRC_FILES
     # learn_pointers
 )
 
-list(APPEND LIB_FILES
+set(ALL_TD_LIB
 
-    TD2.c
-    TD5.c
-    TD6.c
-
+    # TD1
+    $<TARGET_OBJECTS:TD2>
+    # TD3
+    # TD4
+    # TD5
+    # TD6
 
 )
 
-add_library(all_td ${LIB_FILES})
+
+
+add_subdirectory(TD1)
+add_subdirectory(TD2)
+add_subdirectory(TD3)
+add_subdirectory(TD4)
+add_subdirectory(TD5)
+add_subdirectory(TD6)
+
+add_library(all_td ${ALL_TD_LIB})
 # add_subdirectory(ex9)
 # add_subdirectory(ejovo)
 

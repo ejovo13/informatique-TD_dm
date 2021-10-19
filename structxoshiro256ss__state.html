@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TD Devoirs Maison: Class List</title>
+<title>TD Devoirs Maison: xoshiro256ss_state Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,17 +60,33 @@ $(function() {
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">Class List</div></div>
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structxoshiro256ss__state-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xoshiro256ss_state Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here are the classes, structs, unions and interfaces with brief descriptions:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structmat__t.html" target="_self">mat_t</a></td><td class="desc">Matrix structure that simulates a 2d matrix accessed by A(row, col) </td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structstat.html" target="_self">stat</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structxoshiro256ss__state.html" target="_self">xoshiro256ss_state</a></td><td class="desc">Structure to contain the 256 bits of state needed for xoshiro random number generation </td></tr>
+
+<p>Structure to contain the 256 bits of state needed for xoshiro random number generation.  
+ <a href="structxoshiro256ss__state.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ejovo__rand_8h_source.html">ejovo_rand.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7c1abb6555eeabb9daf74c2b4b8a9b83"><td class="memItemLeft" align="right" valign="top"><a id="a7c1abb6555eeabb9daf74c2b4b8a9b83" name="a7c1abb6555eeabb9daf74c2b4b8a9b83"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>s</b> [4]</td></tr>
+<tr class="separator:a7c1abb6555eeabb9daf74c2b4b8a9b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Structure to contain the 256 bits of state needed for xoshiro random number generation. </p>
+<p >The xorshiro algorithm is a class of <code>xorshift</code> algorithms that encorporates bit rotations and linear shifts combined with xor bit operations to create uniform random bits</p>
+<p >There is a global structure <code>XOSHIRO_RNG</code> that servers as a default rng for this module. To use it and the proceeding rng functions that rely on it, always remember to seed <code>XOSHIRO_RNG</code> by calling <code><a class="el" href="ejovo__rand_8h.html#a058f59def35b0a6ec0e9dc5179fd5e12">ejovo_seed()</a></code> in <code>main</code>. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>inc/<a class="el" href="ejovo__rand_8h_source.html">ejovo_rand.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

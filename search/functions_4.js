@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nombre_5ffois_0',['nombre_fois',['../TD2_8h.html#aea0ae306d63bb8ef66af56d0d25566f1',1,'nombre_fois(const int *__T, int __n, size_t __P):&#160;ex2.c'],['../TD5_8h.html#aea0ae306d63bb8ef66af56d0d25566f1',1,'nombre_fois(const int *__T, int __n, size_t __P):&#160;ex2.c']]]
+  ['indice_5fmin_0',['indice_min',['../TD2_8h.html#a5ec61d0a022704efb62c032e04073aea',1,'ex1.c']]],
+  ['init_5ftab_1',['init_tab',['../TD5_8h.html#a4256b94e8dbebdc1fb177ab80690ef9b',1,'ex1.c']]]
 ];

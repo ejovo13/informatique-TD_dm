@@ -14,9 +14,13 @@ set(TD5_LIB
 
 )
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BIN}/TD5)
+
+message(STATUS "ADDING LIBRARY TD5")
 add_library(TD5 OBJECT ${TD5_LIB})
 
-# foreach(s ${TD5_SRC})
-#     add_executable(${s} "${s}.c")
-#     target_link_libraries(${s} TD5)
-# endforeach(s)
+foreach(s ${TD5_SRC})
+    add_executable(TD5_${s} ${s}.c)
+    target_link_libraries(TD5_${s} TD5 ejovo)
+    set_target_properties(TD5_${s} PROPERTIES OUTPUT_NAME ${s})
+endforeach(s)

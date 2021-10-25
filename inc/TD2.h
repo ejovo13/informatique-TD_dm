@@ -7,8 +7,9 @@
 #include <stdlib.h>
 
 /**@file
+ * @brief Public API for the functions defined when solving TD2
  * @author Evan Voyles
- * @date October 12th
+ * @date October 25th
  */
 
 /**
@@ -23,7 +24,7 @@
  * @param __N Taille du tableau
  * @return Indice du plus petit element
  */
-int indice_min(const int * __T, size_t __N);
+int indice_min(const int *__T, size_t __N);
 
 /**
  * Compter le nombre de fois que `__n` apparait dans le tableau `__T`
@@ -35,7 +36,7 @@ int indice_min(const int * __T, size_t __N);
  * @return Le nombre des fois ou `__n` appartient a `__T`
  *
  */
-int nombre_fois(const int * __T, int __n, size_t __P);
+int nombre_fois(const int *__T, int __n, size_t __P);
 
 // Creer une structure pour stocker les resultats de l'analyse statistique
 /**
@@ -53,7 +54,7 @@ typedef struct stat {
  * @param __N Taille du tableau
  * @return Une structure emballant la moyenne et ecart type de `__T`
  */
-Stat analyse_stat(const int * __T, size_t __N);
+Stat analyse_stat(const int *__T, size_t __N);
 
 /**
  * Determiner si un tableau des entiers est un palindrome
@@ -63,7 +64,7 @@ Stat analyse_stat(const int * __T, size_t __N);
  * @param __N Taille du tableau
  * @return Vrai si `__T` est un palindrome, sinon Faux
  */
-bool est_palindrome(const int * __T, size_t __N);
+bool est_palindrome(const int *__T, size_t __N);
 
 /**
  * Modifie un tableau des entiers en remplacant les doublons par 0
@@ -78,7 +79,7 @@ bool est_palindrome(const int * __T, size_t __N);
  * remplacement_doublon(arr, 10); // arr := {1, 4, -3, 13, 0, 6, 0, 0, 0, 5}
  * ```
  */
-void remplacement_doublon(int * __T, size_t __N);
+void remplacement_doublon(int *__T, size_t __N);
 
 /**
  * Stocker les nombres premiers inferieurs ou egaux a `__N` dans un tableau en utilisant

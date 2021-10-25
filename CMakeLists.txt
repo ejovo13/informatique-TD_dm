@@ -22,3 +22,4 @@ file(MAKE_DIRECTORY ${BIN})
 include_directories(${INC})
 
 add_subdirectory(${SRC})
+add_subdirectory(${TEST})

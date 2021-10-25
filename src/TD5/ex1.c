@@ -42,10 +42,4 @@ float *adjacency(const float *__tab, size_t __i, size_t __j, size_t __nb_lignes,
 
         count++;
     }
-
 }
-
-
-
-
-

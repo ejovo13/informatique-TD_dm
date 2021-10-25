@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['indice_5fmin_0',['indice_min',['../TD2_8h.html#a5ec61d0a022704efb62c032e04073aea',1,'ex1.c']]],
-  ['init_5ftab_1',['init_tab',['../TD5_8h.html#a4256b94e8dbebdc1fb177ab80690ef9b',1,'ex1.c']]]
+  ['get_5fin_5ftab_0',['get_in_tab',['../TD5_8h.html#a3d368b24617653b48b97362851eb12a3',1,'TD5.h']]],
+  ['get_5fint_5fxoshiro_1',['get_int_xoshiro',['../ejovo__rand_8h.html#a6b9550eee08d40936e1046c584c6e9b0',1,'ejovo_rand.h']]],
+  ['get_5frand_5fint_2',['get_rand_int',['../ejovo__rand_8h.html#aa4cd0b261b3c79e8393d111ea5300665',1,'ejovo_rand.h']]],
+  ['get_5frand_5fint_5frange_3',['get_rand_int_range',['../ejovo__rand_8h.html#a2ebbbfa64178cd94914e8d91284bf1c6',1,'ejovo_rand.h']]]
 ];

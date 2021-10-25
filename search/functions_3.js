@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['get_5fint_5fxoshiro_0',['get_int_xoshiro',['../ejovo__rand_8h.html#a6b9550eee08d40936e1046c584c6e9b0',1,'ejovo_rand.c']]],
-  ['get_5frand_5fint_1',['get_rand_int',['../ejovo__rand_8h.html#aa4cd0b261b3c79e8393d111ea5300665',1,'ejovo_rand.c']]],
-  ['get_5frand_5fint_5frange_2',['get_rand_int_range',['../ejovo__rand_8h.html#a2ebbbfa64178cd94914e8d91284bf1c6',1,'ejovo_rand.c']]]
+  ['ejovo_5fseed_0',['ejovo_seed',['../ejovo__rand_8h.html#a058f59def35b0a6ec0e9dc5179fd5e12',1,'ejovo_rand.h']]],
+  ['est_5fpalindrome_1',['est_palindrome',['../TD2_8h.html#a4fa21d70de58ebd0ad8dc8417a376de1',1,'TD2.h']]]
 ];

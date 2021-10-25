@@ -67,12 +67,13 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">TD5.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Public API for the functions defined when solving TD5.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
@@ -80,68 +81,57 @@ $(function() {
 </div>
 <p><a href="TD5_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstat.html">stat</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a70550a334c20cfbcb7cf17e6ea6152db"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structstat.html">stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#a70550a334c20cfbcb7cf17e6ea6152db">Stat</a></td></tr>
-<tr class="separator:a70550a334c20cfbcb7cf17e6ea6152db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4256b94e8dbebdc1fb177ab80690ef9b"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#a4256b94e8dbebdc1fb177ab80690ef9b">init_tab</a> (size_t __nb_lignes, size_t __nb_cols)</td></tr>
 <tr class="separator:a4256b94e8dbebdc1fb177ab80690ef9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea0ae306d63bb8ef66af56d0d25566f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#aea0ae306d63bb8ef66af56d0d25566f1">nombre_fois</a> (const int *__T, int __n, size_t __P)</td></tr>
-<tr class="separator:aea0ae306d63bb8ef66af56d0d25566f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1207c9de08f8519c3b6945dbfe9eaa9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="TD2_8h.html#a70550a334c20cfbcb7cf17e6ea6152db">Stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#a1207c9de08f8519c3b6945dbfe9eaa9e">analyse_stat</a> (const int *__T, size_t __N)</td></tr>
-<tr class="separator:a1207c9de08f8519c3b6945dbfe9eaa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa21d70de58ebd0ad8dc8417a376de1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#a4fa21d70de58ebd0ad8dc8417a376de1">est_palindrome</a> (const int *__T, size_t __N)</td></tr>
-<tr class="separator:a4fa21d70de58ebd0ad8dc8417a376de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbc2c5fe20647a113fcd2c1ca262c8a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#abbc2c5fe20647a113fcd2c1ca262c8a7">remplacement_doublon</a> (int *__T, size_t __N)</td></tr>
-<tr class="separator:abbc2c5fe20647a113fcd2c1ca262c8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aded8df99c7194a5cfdf4e0f4fd7ec632"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#aded8df99c7194a5cfdf4e0f4fd7ec632">crible_erastosthene</a> (size_t __N)</td></tr>
-<tr class="separator:aded8df99c7194a5cfdf4e0f4fd7ec632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d368b24617653b48b97362851eb12a3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#a3d368b24617653b48b97362851eb12a3">get_in_tab</a> (const float *__tab, size_t __irow, size_t __icol, size_t __nb_lignes, size_t __nb_cols)</td></tr>
+<tr class="separator:a3d368b24617653b48b97362851eb12a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81cdabb6f8a7db8de591044992fa6cb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#a81cdabb6f8a7db8de591044992fa6cb7">set_in_tab</a> (float *__tab, size_t __irow, size_t __icol, size_t __nb_lignes, size_t __nb_cols, float __value)</td></tr>
+<tr class="separator:a81cdabb6f8a7db8de591044992fa6cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd84f9bd0f1aada57ac22db81e5f7c6"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TD5_8h.html#acfd84f9bd0f1aada57ac22db81e5f7c6">adjacency</a> (const float *__tab, size_t __i, size_t __j, size_t __nb_lignes, size_t __nb_cols)</td></tr>
+<tr class="separator:acfd84f9bd0f1aada57ac22db81e5f7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Evan Voyles </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>October 13th </dd></dl>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a70550a334c20cfbcb7cf17e6ea6152db" name="a70550a334c20cfbcb7cf17e6ea6152db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70550a334c20cfbcb7cf17e6ea6152db">&#9670;&nbsp;</a></span>Stat</h2>
+<div class="textblock"><p >Public API for the functions defined when solving TD5. </p>
+<dl class="section author"><dt>Author</dt><dd>Evan Voyles </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>October 25th </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="acfd84f9bd0f1aada57ac22db81e5f7c6" name="acfd84f9bd0f1aada57ac22db81e5f7c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd84f9bd0f1aada57ac22db81e5f7c6">&#9670;&nbsp;</a></span>adjacency()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structstat.html">stat</a> <a class="el" href="TD2_8h.html#a70550a334c20cfbcb7cf17e6ea6152db">Stat</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Structure qui contient de l'information statistique basique </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a1207c9de08f8519c3b6945dbfe9eaa9e" name="a1207c9de08f8519c3b6945dbfe9eaa9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1207c9de08f8519c3b6945dbfe9eaa9e">&#9670;&nbsp;</a></span>analyse_stat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="TD2_8h.html#a70550a334c20cfbcb7cf17e6ea6152db">Stat</a> analyse_stat </td>
+          <td class="memname">float * adjacency </td>
           <td>(</td>
-          <td class="paramtype">const int *&#160;</td>
-          <td class="paramname"><em>__T</em>, </td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>__tab</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>__N</em>&#160;</td>
+          <td class="paramname"><em>__i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>__j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>__nb_lignes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>__nb_cols</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -150,61 +140,46 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Calculer la moyenne et ecart type d'un tableau des entiers</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">__T</td><td>Tableau des entiers </td></tr>
-    <tr><td class="paramname">__N</td><td>Taille du tableau </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Une structure emballant la moyenne et ecart type de <code>__T</code> </dd></dl>
+<p >Returns a size 4 float array that contains the elements adjacent to tab[irow][icol]</p>
+<dl class="section return"><dt>Returns</dt><dd>[N, E, S, W], where N, E, S, W are the elements to the North, East, South, and West of tab[irow][icol] </dd></dl>
 
 </div>
 </div>
-<a id="aded8df99c7194a5cfdf4e0f4fd7ec632" name="aded8df99c7194a5cfdf4e0f4fd7ec632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aded8df99c7194a5cfdf4e0f4fd7ec632">&#9670;&nbsp;</a></span>crible_erastosthene()</h2>
+<a id="a3d368b24617653b48b97362851eb12a3" name="a3d368b24617653b48b97362851eb12a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d368b24617653b48b97362851eb12a3">&#9670;&nbsp;</a></span>get_in_tab()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int * crible_erastosthene </td>
+          <td class="memname">float get_in_tab </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>__N</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Stocker les nombres premiers inferieurs ou egaux a <code>__N</code> dans un tableau en utilisant la methode du crible d'erastosthene</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">__N</td><td>La valeur maximum </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Un tableau des entiers de taille <code>__N - 1</code> alloue par malloc </dd></dl>
-
-</div>
-</div>
-<a id="a4fa21d70de58ebd0ad8dc8417a376de1" name="a4fa21d70de58ebd0ad8dc8417a376de1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fa21d70de58ebd0ad8dc8417a376de1">&#9670;&nbsp;</a></span>est_palindrome()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool est_palindrome </td>
-          <td>(</td>
-          <td class="paramtype">const int *&#160;</td>
-          <td class="paramname"><em>__T</em>, </td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>__tab</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>__N</em>&#160;</td>
+          <td class="paramname"><em>__irow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>__icol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>__nb_lignes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>__nb_cols</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -213,15 +188,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Determiner si un tableau des entiers est un palindrome</p>
-<p >Par example, <code>{1, 2, 3, 2, 1}</code> est un palindrome mais <code>{1, 1, 2, 2}</code> ne l'est pas </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">__T</td><td>Tableau des entiers </td></tr>
-    <tr><td class="paramname">__N</td><td>Taille du tableau </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Vrai si <code>__T</code> est un palindrome, sinon Faux </dd></dl>
+<p >Get the element "tab[irow][icol]" for a flattened 2d array</p>
+<dl class="section return"><dt>Returns</dt><dd>returns the element at tab[nb_cols * irow + icol] </dd></dl>
 
 </div>
 </div>
@@ -250,41 +218,52 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Creer un tableau (dim 1) de taille __nb_lignes * __nb_cols de floats qui simule un tableau de dimension 2.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">__nb_lignes</td><td>Nombre de lignes du tableau imaginaire </td></tr>
-    <tr><td class="paramname">__nb_cols</td><td>Nombre de colonnes du tableau imaginaire</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer a un tableau de taille __nb_lignes * __nb_cols de floats dont tous les elements &lt;- 0 </dd></dl>
+<p >Initialize a 1-dimensional flat array used to model a 2-d array of nb_lignes x nb_cols</p>
+<dl class="section return"><dt>Returns</dt><dd>A 1-d float array of size nb_lignes * nb_cols </dd></dl>
 
 </div>
 </div>
-<a id="aea0ae306d63bb8ef66af56d0d25566f1" name="aea0ae306d63bb8ef66af56d0d25566f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea0ae306d63bb8ef66af56d0d25566f1">&#9670;&nbsp;</a></span>nombre_fois()</h2>
+<a id="a81cdabb6f8a7db8de591044992fa6cb7" name="a81cdabb6f8a7db8de591044992fa6cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81cdabb6f8a7db8de591044992fa6cb7">&#9670;&nbsp;</a></span>set_in_tab()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int nombre_fois </td>
+          <td class="memname">void set_in_tab </td>
           <td>(</td>
-          <td class="paramtype">const int *&#160;</td>
-          <td class="paramname"><em>__T</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>__n</em>, </td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>__tab</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>__P</em>&#160;</td>
+          <td class="paramname"><em>__irow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>__icol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>__nb_lignes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>__nb_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>__value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -293,57 +272,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Compter le nombre de fois que <code>__n</code> apparait dans le tableau <code>__T</code></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">__T</td><td>Tableau des entiers </td></tr>
-    <tr><td class="paramname">__n</td><td>Valeur a comparer </td></tr>
-    <tr><td class="paramname">__P</td><td>Taille du tableau <code>__T</code></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Le nombre des fois ou <code>__n</code> appartient a <code>__T</code> </dd></dl>
+<p >Set the element "tab[irow][icol]" for a flattened 2d array </p>
 
-</div>
-</div>
-<a id="abbc2c5fe20647a113fcd2c1ca262c8a7" name="abbc2c5fe20647a113fcd2c1ca262c8a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbc2c5fe20647a113fcd2c1ca262c8a7">&#9670;&nbsp;</a></span>remplacement_doublon()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void remplacement_doublon </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>__T</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>__N</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Modifie un tableau des entiers en remplacant les doublons par 0</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">__T</td><td>Tableau a modifier </td></tr>
-    <tr><td class="paramname">__N</td><td>Taille du tableau</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section attention"><dt>Attention</dt><dd><code>remplacement_doublon</code> modifie le tableau <code>__T</code> qui est donne comme argument</dd></dl>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> arr[10] = {1, 4, -3, 13, 4, 6, 1, 13, 1, 5}</div>
-<div class="line"><a class="code hl_function" href="TD2_8h.html#abbc2c5fe20647a113fcd2c1ca262c8a7">remplacement_doublon</a>(arr, 10); <span class="comment">// arr := {1, 4, -3, 13, 0, 6, 0, 0, 0, 5}</span></div>
-<div class="ttc" id="aTD2_8h_html_abbc2c5fe20647a113fcd2c1ca262c8a7"><div class="ttname"><a href="TD2_8h.html#abbc2c5fe20647a113fcd2c1ca262c8a7">remplacement_doublon</a></div><div class="ttdeci">void remplacement_doublon(int *__T, size_t __N)</div><div class="ttdef"><b>Definition:</b> ex5.c:3</div></div>
-</div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

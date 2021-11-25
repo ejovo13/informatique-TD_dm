@@ -14,6 +14,14 @@ cmake ../ && cmake --build ./
 Building will create the folder `bin` where all of the homework's executables can be found. Source for the individual homework problems can be found in source.
 
 ### TD2
+1. Minimum
+2. Nombre d'occurences
+3. Moyenne et écart-type
+4. Palindrome
+5. Remplacement des doublons
+6. Multiplication des matrices
+7. Crible d'Ératosthène
+8. 
 - [x] Tout
 - [x] Matrix multiplication!!!
 

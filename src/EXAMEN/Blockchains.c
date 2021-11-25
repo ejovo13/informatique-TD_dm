@@ -94,11 +94,11 @@ Block *modification_blockchain(Block *blockchain, Block *a_modifier, float val) 
 
     while (iblock) {
 
-        printf("searching block with id: %ld\n", iblock->id);
+        // printf("searching block with id: %ld\n", iblock->id);
 
         if (iblock->id == a_modifier->id) { // modify block
 
-            printf("Found block a_modifier\n");
+            // printf("Found block a_modifier\n");
             iblock->trans->val = val;
             iblock->id = creation_code_block(iblock->prev->id, iblock->trans);
             break; // stop searching
@@ -120,7 +120,7 @@ Block *modification_blockchain(Block *blockchain, Block *a_modifier, float val) 
 
             if (iblock->prev == block_last_modified) { // recompute the value of the id
 
-                printf("Generating a new transaction id\n");
+                // printf("Generating a new transaction id\n");
                 iblock->id = creation_code_block(iblock->prev->id, iblock->trans);
                 block_last_modified = iblock;
                 break;

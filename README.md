@@ -21,13 +21,12 @@ Building will create the folder `bin` where all of the homework's executables ca
 5. Remplacement des doublons
 6. Multiplication des matrices
 7. Crible d'Ératosthène
-8. 
 - [x] Tout
 - [x] Matrix multiplication!!!
 
 ### TD3
-- [x] Exo 1
-- [x] Exo 6
+- [x] Exo 1 Turing
+- [x] Exo 6 Tour de Hanoi
 
 ### TD4
 - [x] Exo 3

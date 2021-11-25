@@ -5,6 +5,14 @@
 
 Devoirs Maison
 
+# Build 
+Build using `cmake`. Tested on Ubuntu and MacOs.
+```
+mkdir build && cd build
+cmake ../ && cmake --build ./
+```
+Building will create the folder `bin` where all of the homework's executables can be found. Source for the individual homework problems can be found in source.
+
 ### TD2
 - [x] Tout
 - [x] Matrix multiplication!!!

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int * quitter_element(const int * __arr, int __n, int __index) {
 
@@ -20,51 +21,45 @@ int * quitter_element(const int * __arr, int __n, int __index) {
 
 }
 
-void print_perm(const int * __arr, int __n) {
+bool first_iter = false;
+
+
+void print_perm(const int * __arr, int __n, const int* __prev, int __base_n, int __prev_i) {
+
+    int iter_count = __base_n - __n;
 
     if (__n == 1) {
         printf("%d ", __arr[0]);
     } else {
 
-        for (int i = 0; i < __n; i++) {
-            // for (int j = 0; j < __n - 1; j++) {
+        for (int i = 0; i < __n ; i++) {
 
-                printf("%d ", __arr[i]);
-                print_perm(quitter_element(__arr, __n, i), __n - 1);
-                printf("\n");
+            if (iter_count > 0 && i > 0) {
+                for (size_t j = 0; j < iter_count; j++) {
 
-                if ( __n > 2 ) {
-                    printf("%d ", __arr[i]);
+                    printf("%d ", __prev[__prev_i + j]); // black magic
+                    // printf("%d ", __prev[j + __prev_i]); // black magic
+                    // printf("%d ", (quitter_element(__prev, __base_n, j))[__prev_i + j]); // black magic
                 }
-            // }
+            }
 
-            // printf("\n%d ", __arr[i]);
+            printf("%d ", __arr[i]);
+            print_perm(quitter_element(__arr, __n, i), __n - 1, __prev, __base_n, i);
+
+            printf("\n");
+
         }
     }
+
 }
 
 int main() {
 
-    int arr[] = {1, 2, 3, 4};
+    int arr[] = {1, 2, 3, 4, 5, 6};
     int * b = quitter_element(arr, 3, 1);
-
-    for (int i = 0; i < 2; i++) {
-        printf("%d ", b[i]);
-    }
-    int * c = quitter_element(arr, 3, 2);
-
-    for (int i = 0; i < 2; i++) {
-        printf("%d ", c[i]);
-    }
-
-    int * d = quitter_element(arr, 3, 0);
-
-    for (int i = 0; i < 2; i++) {
-        printf("%d ", d[i]);
-    }
 
     printf("\nPermutations: \n");
 
-    print_perm(arr, 3);
+    print_perm(arr, 3, arr, 3, 0);
 
 }
